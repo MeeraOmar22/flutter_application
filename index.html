@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ensures the button is above other content */
+        .golden-btn {
+            position: relative;
+            z-index: 10;
+            margin-top: 40px; /* Adjust space below the cake */
+        }
+
+        /* Ensures the cake image stays in its correct place */
+        .cake img {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 20px; /* Adds space above the cake image */
+        }
+    </style>
 </head>
 
 <body>
@@ -45,9 +60,13 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-xl-3 cake">
-                    <img src="img/cake.gif" alt="">
-                </div>
+                <!-- Cake image with proper position -->
+<div class="col-12 col-xl-3 cake text-center">
+    <img src="img/cake.gif" alt="">
+    <div class="text-center">
+        <a href="scrapbook.html" class="btn btn-warning golden-btn">Open Scrapbook</a>
+    </div>
+</div>
             </div>
         </div>
         <img src="img/Balloon-Border.png" width="100%" class="balloon-border">
