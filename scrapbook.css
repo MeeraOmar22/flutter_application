@@ -27,6 +27,13 @@ body {
     transform: rotate(-1deg);
 }
 
+.scrap-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 .scrap-item img {
     width: 100%;
     height: auto;
